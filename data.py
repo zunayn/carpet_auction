@@ -1,4 +1,9 @@
 class Inventory:
+    """
+    Container class for carpet instances, bidder instances, admin instances.
+
+    Defines methods to operate on the above listed instances.
+    """
     def __init__(self):
         self._carpets = set()
         self.bidders = set()
@@ -117,6 +122,12 @@ class Inventory:
         return len(self._carpets)
 
 class Carpet:
+    """
+    Defines a Carpet within an auctioning system.
+
+    Has a one-to-many relationship with bidder instances.
+    Carpet can be bid upon max. 7 times, and has a unique ID.
+    """
     bids_left = 7
 
     def __init__(self, id, width, height, fabric, base_price):
@@ -195,6 +206,9 @@ class Carpet:
 
 
 class User:
+    """
+    Defines a User having username and password.
+    """
     def __init__(self, username, password):
         self.username = username
         self.password = password
@@ -204,6 +218,10 @@ class User:
 
 
 class Admin(User):
+    """
+    Defines an Admin which is-a User but has special privileges
+    for the inventory.
+    """
     def __init__(self, username, password, inventory):
         super().__init__(username, password)
         self.inventory = inventory
@@ -227,6 +245,10 @@ class Admin(User):
 
 
 class Bidder(User):
+    """
+    Defines a Bidder which is-a User, but can place bids on carpet
+    instances.
+    """
     def __init__(self, username, password):
         super().__init__(username, password)
         self.bids = [] # Contains carpet objects.
