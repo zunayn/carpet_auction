@@ -3,7 +3,7 @@ Leverages the concepts of OOP in Python language to create a carpet auctioning s
 
 ## A BRIEF SUMMARY OF THE PROGRAM
 
-This program works on following "pillars" *(defined in data.py)*:   
+#### This program works on following "pillars" *(defined in data.py)*:   
 
 
 1. Inventory, which contains all the objects for auctioning, information
