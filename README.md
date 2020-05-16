@@ -42,10 +42,10 @@ is created when the program starts.***
 ### ***How to Use***:
 
 - The program starts with a clean state, so you wil have to add carpets to
-the inventory, as well as the bidder, manually.
+the inventory, as well as the bidders, manually.Do this by logging in as
+an admin, and then adding carpets to the inventory from there.
 
-- Do this by logging in as an admin, and then adding carpets. Bidders can be
-generally added using the program's interface.
+- Bidders can just be normally added by using the program's interface.
 
 
 ***This is a project I made to measure my Object Oriented Design skills,
