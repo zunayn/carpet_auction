@@ -3,7 +3,7 @@ Leverages the concepts of OOP in Python language to create a carpet auctioning s
 
 ## A BRIEF SUMMARY OF THE PROGRAM
 
-#### This program works on following "pillars" *(defined in data.py)*:   
+### This program works on following "pillars" *(defined in data.py)*:   
 
 
 1. Inventory, which contains all the objects for auctioning, information
@@ -22,19 +22,19 @@ in the auction.
 *The API is used in helpers.py to modularize the code in main.py.*
 
 
-#### ***main.py*** *(Usecase of the API/ Implementation of the program)*:
+### ***main.py*** **(Usecase of the API/ Implementation of the program)**:
 
 
 - Menus (Main menu, Admin Menu, Bidder Menu): Dashboards which provide the
  user accessibility on the things they can work on (explained above)
 
- Each menu contains a limited number of options for the user.
+- Each menu contains a limited number of options for the user.
+
+***NOTE: A default admin user instance with username="admin", and password="admin"
+is created when the program starts.***
 
 
-**A default admin user instance with username="admin", and password="admin"
-is created when the program starts.**
-
-#### ***How to Use***:
+### ***How to Use***:
 
 - The program starts with a clean state, so you wil have to add carpets to
 the inventory manually, as well as create the bidders manually in the
