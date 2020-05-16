@@ -197,7 +197,7 @@ class Carpet:
     def __str__(self):
         details = "{} {}x{}".format(self.fabric, self.width, self.height)
 
-        return "{} ID: {}, Price: ${}, In Stock: {}".format(
+        return "{} ID: {}, Highest Bid: ${}, In Stock: {}".format(
                                         details, self.id,
                                         self.price, self.in_stock)
 

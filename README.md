@@ -6,17 +6,17 @@ Leverages the concepts of OOP in Python language to create a carpet auctioning s
 ### Classes used in the program and their brief desription: *(defined in data.py)*:   
 
 
-1. Inventory: Contains all the carpets for auctioning. Also contains
+1. **Inventory**: Contains all the carpets for auctioning. Also contains
 information about bidders, admins. It defines CRUD methods to operate on them.
 
-2. Bidders: Users who can place a bid on a carpet object, and win the carpet
+2. **Bidders**: Users who can place a bid on a carpet object, and win the carpet
 if their bid is the highest. They have access to their bids i.e updating bids
 and cancelling bids.
 
-3. Admins: Users who have special privileges and can operate on the inventory i.e
+3. **Admins**: Users who have special privileges and can operate on the inventory i.e
 add new carpets to the inventory.
 
-4. Carpets: Contain data regarding them and their status in the auction i.e
+4. **Carpets**: Contain data regarding them and their status in the auction i.e
 no. of bids left, highest and last bidder, stock status etc.
 
 
@@ -42,12 +42,10 @@ is created when the program starts.***
 ### ***How to Use***:
 
 - The program starts with a clean state, so you wil have to add carpets to
-the inventory manually, as well as create the bidders manually in the
-lifetime of the program.
+the inventory, as well as the bidder, manually.
 
-- This is achieved by logging into the Admin dashboard(kind of), and adding
-the carpets to the inventory thereafter. Then, you have to create the Bidders
-separately and then bid on the carpets from the Bidder Menu/dashboard.
+- Do this by logging in as an admin, and then adding carpets. Bidders can be
+generally added using the program's interface.
 
 
 ***This is a project I made to measure my Object Oriented Design skills,
