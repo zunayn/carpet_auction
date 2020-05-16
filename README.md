@@ -3,32 +3,37 @@ Leverages the concepts of OOP in Python language to create a carpet auctioning s
 
 ## A BRIEF SUMMARY OF THE PROGRAM
 
-### This program works on following "pillars" *(defined in data.py)*:   
+### Classes used in the program and their brief desription: *(defined in data.py)*:   
 
 
-1. Inventory, which contains all the objects for auctioning, information
-about bidders, admins, and defines methods to operate on them.
+1. Inventory: Contains all the carpets for auctioning. Also contains
+information about bidders, admins. It defines CRUD methods to operate on them.
 
-2. Bidders, who can place a bid on a carpet object, and win the bid
-if theirs is the highest. They have access to their bids i.e updating them
-and cancelling them.
+2. Bidders: Users who can place a bid on a carpet object, and win the carpet
+if their bid is the highest. They have access to their bids i.e updating bids
+and cancelling bids.
 
-3. Admins, who have special privileges and can operate on the inventory i.e
+3. Admins: Users who have special privileges and can operate on the inventory i.e
 add new carpets to the inventory.
 
-4. Carpets themselves, who contain data regarding them and their status
-in the auction.
-
-*The API is used in helpers.py to modularize the code in main.py.*
+4. Carpets: Contain data regarding them and their status in the auction i.e
+no. of bids left, highest and last bidder, stock status etc.
 
 
-### ***main.py*** **(Usecase of the API/ Implementation of the program)**:
+### ***About the program***:
 
+- The program works with the help of menus. Depending on what kind of user is
+using the program, it will give different options accordingly.
 
-- Menus (Main menu, Admin Menu, Bidder Menu): Dashboards which provide the
- user accessibility on the things they can work on (explained above)
+- Only admins can add carpets to the inventory. This is a special privilege they
+have.
 
-- Each menu contains a limited number of options for the user.
+- Bidders can place their bids on a carpet, and multiple bidders can bid on one
+single carpet. The maximum no. of bids on a carpet can be 7. So, when 7 bids are
+placed on a carpet, it goes to the highest bidder. A bidder can also cancel their
+bids.
+
+- The login and separation of users is not robust, and is just an emulation.
 
 ***NOTE: A default admin user instance with username="admin", and password="admin"
 is created when the program starts.***
@@ -45,6 +50,6 @@ the carpets to the inventory thereafter. Then, you have to create the Bidders
 separately and then bid on the carpets from the Bidder Menu/dashboard.
 
 
-***This is just a project I made to measure my OOP design skills, and programming
-skills in general. Do give feedback on what you think I can improve, because
-surely, there is a lot.***
+***This is a project I made to measure my Object Oriented Design skills,
+and programming skills in general. Do give feedback on what you think I can
+improve, because surely, there is a lot.***
